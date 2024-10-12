@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin View</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="side-panel">
+            <h2>Admin Menu</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="admin.html">Task Management</a></li>
+                <li><a href="#">All Employees Attendance</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h1>Admin Panel</h1>
+            <div id="calendar"></div>
+            <div id="adminTaskList"> 
+                <!-- Sorted tasks will be displayed here -->
+            </div>
+            <h2>Assign Task</h2>
+            <form id="taskAssignForm">
+                <input type="text" id="employees" placeholder="Employee Names (comma separated)" required>
+                <input type="text" id="task" placeholder="Task Description" required>
+                <button type="submit">Assign Task</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
